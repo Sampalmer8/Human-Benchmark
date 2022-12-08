@@ -1,0 +1,25 @@
+.mainTitle {
+    background-color: #788bff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#trophy {
+    font-size: 100px;
+    color: #E2FDFF;
+}
+
+button {
+    border-radius: 4px;
+    padding: 10px;
+    width: 125px;
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: azure;
+}
