@@ -1,0 +1,30 @@
+html {
+    background: url("img/explosion.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.trackingTing {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#myCanvas {
+    background-color: white;
+    margin-top: 100px;
+}
+
+.canvasWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.indexBody {
+    text-align: center;
+    border-radius: 25px;
+    width: 500px;
+    margin: auto;
+}
+
+#top {
+    background-color: #9BB1FF;
+    padding: 100px;
+}
