@@ -24,7 +24,7 @@ let cnv = document.getElementById("myCanvas");
 let ctx = cnv.getContext("2d");
 
 cnv.width = 800;
-cnv.height = 800;
+cnv.height = 500;
 
 function draw() {
   ctx.fillStyle = "white";
@@ -50,6 +50,7 @@ let element = {
 
 let mouseX;
 let mouseY;
+let clicks = 0;
 
 // Event Listeners & Handlers
 document.addEventListener("click", mouseclickHandler);
@@ -65,10 +66,48 @@ function mouseclickHandler(event) {
   let circleDistance = Math.sqrt(
     (element.x - mouseX) ** 2 + (element.y - mouseY) ** 2
   );
+
   if (circleDistance <= element.r) {
     let randX = Math.random() * (cnv.width - 100);
     element.x = randX + 50;
     let randY = Math.random() * (cnv.height - 100);
     element.y = randY + 50;
+    start();
+    clicks++;
+  }
+}
+
+var seconds = 00;
+var tens = 00;
+var Interval;
+var appendTens = document.getElementById("tens");
+var appendSeconds = document.getElementById("seconds");
+
+function start() {
+  clearInterval(Interval);
+  Interval = setInterval(startTimer, 10);
+}
+
+function startTimer() {
+  tens++;
+
+  if (tens <= 9) {
+    appendTens.innerHTML = "0" + tens;
+  }
+
+  if (tens > 9) {
+    appendTens.innerHTML = tens;
+  }
+
+  if (tens > 99) {
+    console.log("seconds");
+    seconds++;
+    appendSeconds.innerHTML = "0" + seconds;
+    tens = 0;
+    appendTens.innerHTML = "0" + 0;
+  }
+
+  if (seconds > 9) {
+    appendSeconds.innerHTML = seconds;
   }
 }

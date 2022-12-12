@@ -2,7 +2,7 @@ body {
     background-color: #788bff;
 }
 
-.mainTitle {
+#mainTitle {
     background-color: #788bff;
     text-align: center;
     padding-top: 100px;
@@ -25,5 +25,34 @@ body {
 
 #test:hover {
     cursor: pointer;
-    background-color: azure;
+    background-color: rgb(255, 240, 245);
+}
+
+#homeBtn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #9BB1FF;
+}
+
+#homeBtn:hover {
+    background-color: #adbeff;
+    cursor: pointer;
+}
+
+
+#begin{
+    background-color: #9BB1FF;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
+#begin:hover{
+    background-color: #adbeff;
+    color: white;
 }
