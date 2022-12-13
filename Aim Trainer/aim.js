@@ -56,6 +56,7 @@ let clicks = 0;
 document.addEventListener("click", mouseclickHandler);
 
 function mouseclickHandler(event) {
+  result = 0;
   // Get rectangle info about canvas location
   let cnvRect = cnv.getBoundingClientRect();
 
@@ -74,6 +75,26 @@ function mouseclickHandler(event) {
     element.y = randY + 50;
     start();
     clicks++;
+    if (clicks === 10) {
+      cnv.remove();
+      const timeDisplay = document.getElementById("time");
+      timeDisplay.remove();
+      clearInterval(Interval);
+      document.getElementById("finalTime").innerHTML = `${seconds}:${tens}`;
+      let compare = (seconds + (tens/100)) - 6;
+      document.getElementById("compare").innerHTML = compare;
+      tens = "00";
+      seconds = "00";
+      appendTens.innerHTML = tens;
+      appendSeconds.innerHTML = seconds;
+      clicks = 0;
+    }
+    var result = document.getElementById("result");
+    if (clicks === 10) {
+      result.style.display = "block";
+    } else {
+      result.style.display = "none";
+    }
   }
 }
 

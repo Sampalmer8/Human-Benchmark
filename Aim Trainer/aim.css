@@ -26,9 +26,11 @@ html {
 
 #top {
     background-color: #788BFF;
-    padding: 100px;
+    padding: 50px;
     border-radius: 25px;
     text-align: center;
+    width: 800px;
+    margin: auto;
 }
 
 #top button {
