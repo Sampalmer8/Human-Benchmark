@@ -27,7 +27,7 @@ cnv.width = 800;
 cnv.height = 500;
 
 function draw() {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "#D1EAFF";
   ctx.fillRect(0, 0, cnv.width, cnv.height);
 
   ctx.fillStyle = "cyan";
@@ -56,7 +56,6 @@ let clicks = 0;
 document.addEventListener("click", mouseclickHandler);
 
 function mouseclickHandler(event) {
-  result = 0;
   // Get rectangle info about canvas location
   let cnvRect = cnv.getBoundingClientRect();
 
@@ -75,25 +74,28 @@ function mouseclickHandler(event) {
     element.y = randY + 50;
     start();
     clicks++;
+    console.log(clicks);
     if (clicks === 10) {
+      document.getElementById("finalTime").innerHTML = `${seconds}.${tens}`;
+      let compare = 6 - (seconds + tens / 100);
+      document.getElementById("compare").innerHTML =
+        Math.abs(compare).toFixed(2);
+      if (compare < 0) {
+        document.getElementById("moreLess").innerHTML = "more";
+      } else {
+        document.getElementById("moreLess").innerHTML = "less";
+      }
       cnv.remove();
       const timeDisplay = document.getElementById("time");
       timeDisplay.remove();
       clearInterval(Interval);
-      document.getElementById("finalTime").innerHTML = `${seconds}:${tens}`;
-      let compare = (seconds + (tens/100)) - 6;
-      document.getElementById("compare").innerHTML = compare;
       tens = "00";
       seconds = "00";
       appendTens.innerHTML = tens;
       appendSeconds.innerHTML = seconds;
       clicks = 0;
-    }
-    var result = document.getElementById("result");
-    if (clicks === 10) {
-      result.style.display = "block";
-    } else {
-      result.style.display = "none";
+      document.getElementById("result").style.display = "block";
+      document.getElementById("stats").style.display = "block";
     }
   }
 }

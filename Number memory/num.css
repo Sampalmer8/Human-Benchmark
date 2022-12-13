@@ -1,17 +1,65 @@
 h1 {
-    color: azure;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
 }
-
 
 h2 {
-    color: azure;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
 div {
-    background-color: aqua;
+  background-color: aqua;
+  padding: 100px;
+}
+
+body {
+  text-align: center;
+}
+
+i {
+  font-size: 50px;
+  color: azure;
 }
 
 button {
-    text-align: center;
+  padding: 15px 30px 15px 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: yellow;
+  border-color: rgba(255, 255, 0, 0);
+}
+
+button:hover {
+  background-color: #e4ee89;
+  cursor: pointer;
+}
+
+html {
+  background-color: aqua;
+}
+
+#div1 {
+  background-color: azure;
+  margin-left: -10px;
+  color: #5a5a5a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 500px;
+  float: left;
+}
+
+#div2 {
+  text-align: right;
+  background-color: azure;
+  margin-right: -10px;
+  color: #5a5a5a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: 500px;
+  float: right;
+  padding-bottom: 123px;
 }
