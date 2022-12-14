@@ -10,13 +10,27 @@
     ></script>
   </head>
   <body>
-    <div>
-      <a href="/index.html"><button id="homeBtn">Home</button></a>
+    <div id="result-container">
+      <p id="home">
+        <a href="/index.html">Home</a>
+      </p>
+      <div id="final">
+        <a href="/index.html"><button>Home</button></a>
+        <h2 id="average">---</h2>
+      </div>
+      <p id="prev">Previous results:</p>
+      <ul id="result"></ul>
     </div>
-    <div id="mainTitle">
-      <p id="recBolt"><i class="fa-solid fa-bolt"></i></p>
-      <h1>Reaction Time Test</h1>
-      <h3>Test your reaction time against the other homosapians</h3>
-      <button id="begin">Begin</button>
-    </div>
+    <button id="start">
+      <p id="last">
+        <span class="spacer">s</span>
+      </p>
+      START
+    </button>
+    <button id="stop" class="hidden">
+      <p class="spacer">s</p>
+      CLICK GREEN
+    </button>
+    <button id="try-again" class="hidden"></button>
+  </body>
 </html>
