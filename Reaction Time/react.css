@@ -54,3 +54,37 @@ li {
   margin: auto;
   text-align: center;
 }
+
+#finalHome {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  position: absolute;
+  transform: translate(-50%, -10%);
+  left: 50%;
+  top: 20%;
+}
+
+#finalHome:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#average {
+  position: absolute;
+  transform: translate(-50%, -30%);
+  font-size: 30px;
+  left: 50%;
+  top: 40%;
+}
+
+#infoTing {
+  position: absolute;
+  transform: translate(-50%, -30%);
+  font-size: 30px;
+  left: 50%;
+  top: 60%;
+}
