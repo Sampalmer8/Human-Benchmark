@@ -68,6 +68,7 @@ function stopTimer() {
     buttonTryAgain.remove();
     document.getElementById("prev").remove();
     document.getElementById("home").remove();
+    document.getElementById("instruc").remove();
     document.body.style.background = "#BFD7FF";
     document.getElementById("final").style.display = "block";
     let total = 0;

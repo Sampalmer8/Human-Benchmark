@@ -66,11 +66,13 @@ li {
   transform: translate(-50%, -10%);
   left: 50%;
   top: 20%;
+  background-color: #d1eaff;
+  color: #5465ff;
 }
 
 #finalHome:hover {
   cursor: pointer;
-  background-color: lightgray;
+  background-color: #e2fdff;
 }
 
 #average {
