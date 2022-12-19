@@ -1,14 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-
-* {
-  font-family: "Inconsolata", monospace;
+html {
+  background-color: #b9c2ff;
 }
 
-#clk {
-  height: 10rem;
-  font-size: 300%;
+#result {
+  display: none;
+  background-color: #788bff;
+  width: 600px;
+  padding: 100px;
+  font-size: 30px;
+  margin-top: 50px;
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#click {
+  border: 1px solid #0012af;
+  margin: auto;
+  margin-top: 35px;
+  background-color: #9daaff;
+  border-radius: 20px;
+}
+
+#top {
+  background-color: #788bff;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#top button {
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: #5465ff;
+}
+
+#top button:hover {
+  background-color: #6474ff;
 }
 
 #time {
-  margin-right: 150px;
+  text-align: center;
 }

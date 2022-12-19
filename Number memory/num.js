@@ -18,7 +18,7 @@ function start() {
       document.getElementById("countdown").innerHTML =
         "<button class=startbutton onclick=run() >submit</button>";
     }
-  }, 1000);
+  }, 750);
 }
 function run() {
   if (numberinput.value == rand) {
