@@ -15,7 +15,7 @@ function clicked() {
         document.getElementById("click").style.display = "none";
         document.getElementById("time").style.display = "none";
         let cps = numOfClicks / 10;
-        let compare = 6.7 - cps;
+        let compare = 7 - cps;
         document.getElementById("compare").innerHTML =
           Math.abs(compare).toFixed(2);
         if (compare < 0) {
