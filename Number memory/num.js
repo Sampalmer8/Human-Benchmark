@@ -25,6 +25,6 @@ function run() {
     start();
     ++i2;
   } else {
-    document.getElementById("countdown").innerHTML = " GAME OVER";
+    document.getElementById("countdown").innerHTML = "GAME OVER";
   }
 }
